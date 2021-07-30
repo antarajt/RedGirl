@@ -1,0 +1,133 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	background:url('bg1.jpg ');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.logo{
+	width: 140px;
+	height: auto;
+	padding: 20px 100px;
+}
+.navbar{
+	height: 80px;
+	width: 100%;
+	background: rgba(0,0,0,0.4);
+	
+}
+/*change*/
+.navbar ul{
+	display: inline;
+	margin-right: 20px;
+}
+/*change*/
+.navbar ul li{
+	float: right;
+	list-style: none;
+	margin: 20px 10px;
+	position: relative;
+	z-index:9999;
+}
+/*change*/
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 10px 20px;
+	display: block;
+	font-family: sans-serif;
+	transition: .3s;
+}
+/*change*/
+.navbar li ul li{
+	width: 130px;
+	margin: 0;
+	background: rgba(0,0,0,0.1);
+}
+/*change*/
+.navbar li ul{
+	position: absolute;
+	left: 800px;
+	transition: .7s;
+}
+/*change*/
+.navbar li:hover ul{
+	left: 0;
+}
+/*change*/
+.navbar li ul li ul{
+	position: absolute;
+	top: -800px;
+	transition: .7s;
+}
+/*change*/
+.navbar li ul li ul li{
+	margin: 0;
+}
+/*change*/
+.navbar li ul li:hover ul{
+	top: 0;
+	left: 130px;
+}
+.rotate{
+	transform: rotate(90deg);
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+	background: red;
+	border-radius: 2px;
+}
+
+.wrapper .center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+.center h1{
+	color: white;
+	font-size: 70px;
+	font-weight: bold;
+	width: 900px;
+	text-align: center;
+}
+.center h2{
+	color: white;
+	font-size: 70px;
+	text-align: center;
+	font-weight: bold;
+	width: 885px;
+	margin-top: 10px;
+}
+.center .buttons{
+	margin: 35px 280px;
+}	
+.buttons button{
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: red;
+	border: 1px solid #cc0000;
+	outline: none;
+	cursor: pointer;
+	border-radius: 25px;
+	transition: .5s;
+}
+.buttons .btn{
+	margin-left: 25px;
+}
+.buttons button:hover{
+	background: #cc0000;
+}
